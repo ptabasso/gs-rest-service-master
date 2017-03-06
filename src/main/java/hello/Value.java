@@ -9,6 +9,9 @@ public class Value {
     private Long id;
     private String quote;
 
+    public Value() {
+    }
+
     public Value(long id, String quote) {
         this.id = id;
         this.quote = quote;

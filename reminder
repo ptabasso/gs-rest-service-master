@@ -1,0 +1,18 @@
+java -javaagent:/Users/pejman/AppDynamics/4221/ver4.2.2.1/javaagent.jar
+-Dappdynamics.controller.hostName=osxpejman.local
+-Dappdynamics.controller.port=8099
+-Dappdynamics.agent.applicationName=SpringBoot
+-Dappdynamics.agent.tierName=Two
+-Dappdynamics.agent.nodeName=Node2
+-jar ./build/libs/gs-rest-service-0.1.0.jar --server.port=8082
+
+
+
+
+java -javaagent:/Users/pejman/AppDynamics/4221/ver4.2.2.1/javaagent.jar -Dappdynamics.controller.hostName=osxpejman.local -Dappdynamics.controller.port=8099 -Dappdynamics.agent.applicationName=SpringBoot -Dappdynamics.agent.tierName=Two -Dappdynamics.agent.nodeName=Node2 -jar ./build/libs/gs-rest-service-0.1.0.jar --server.port=8082
+
+
+Ou sans agent
+
+java  -jar ./build/libs/gs-rest-service-0.1.0.jar --server.port=8082
+
